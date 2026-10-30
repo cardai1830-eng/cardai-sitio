@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cardai Solutions · Identidad, marketing y tecnología para empresas</title>
+<meta name="description" content="Construimos la identidad, la presencia digital y los sistemas que hacen crecer a tu empresa: identidad de marca, sitios y tiendas en línea, campañas en Meta y automatización. México y todo el mundo de habla hispana.">
+<link rel="canonical" href="https://cardai.mx/">
+<meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161A" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cardai Solutions">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Cardai Solutions · De la identidad a la automatización">
+<meta property="og:description" content="Identidad de marca, sitios y tiendas en línea, campañas en Meta y automatización para empresas de habla hispana. Un solo método, un solo responsable.">
+<meta property="og:url" content="https://cardai.mx/">
+<meta property="og:image" content="https://cardai.mx/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cardai Solutions · De la identidad a la automatización">
+<meta name="twitter:description" content="Identidad de marca, sitios y tiendas en línea, campañas en Meta y automatización para empresas de habla hispana.">
+<meta name="twitter:image" content="https://cardai.mx/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Cardai Solutions","alternateName":"Cardai","url":"https://cardai.mx/","email":"hola@cardai.mx","description":"Identidad, marketing y tecnología para empresas. Identidad de marca, sitios y tiendas en línea, campañas en Meta y automatización.","areaServed":[{"@type":"Country","name":"México"}],"availableLanguage":"es","slogan":"De la identidad a la automatización.","founder":{"@type":"Person","name":"[Nombre] Cárdenas"},"knowsAbout":["Identidad de marca","Tiendas en línea","Campañas en Meta","Automatización de procesos"]}
+</script>
+<script>
+/* Configuración del sitio. Completa estos valores y vuelve a publicar. */
+window.CARDAI = {
+  formEndpoint: "",            /* Endpoint de Formspree, por ejemplo https://formspree.io/f/abcdwxyz */
+  whatsapp: "",                /* Número con código de país y sin signos, por ejemplo 5215512345678 */
+  agendaUrl: "",               /* Enlace de agenda, por ejemplo https://calendly.com/cardai/20min */
+  pixelId: ""                  /* Identificador del píxel de Meta, solo números */
+};
+</script>
+<style>
+/* Layout: sitio de una página; bandas a lo ancho con contenido centrado a 1120px; hueso de base, un solo botón aqua por pantalla, el trayecto como primera sección tras el héroe */
+:root{
+  --bg:#F7F6F2; --fg:#14161A; --muted:#5B6068; --line:#D9DEE4; --card:#FFFFFF; --soft:#EEF0F2;
+  --accent:#19C6B6; --accent-text:#0E7C73; --node:#0E7C73; --inv-bg:#14161A; --inv-fg:#F7F6F2; --inv-muted:#A3A9B3;
+  --font-display:"Sora", "Trebuchet MS", sans-serif;
+  --font-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:"IBM Plex Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#14161A; --fg:#F7F6F2; --muted:#A3A9B3; --line:#2A2E35; --card:#1C1F25; --soft:#22262D; --accent-text:#19C6B6; --node:#19C6B6; --inv-bg:#F7F6F2; --inv-fg:#14161A; --inv-muted:#5B6068; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#14161A; --fg:#F7F6F2; --muted:#A3A9B3; --line:#2A2E35; --card:#1C1F25; --soft:#22262D; --accent-text:#19C6B6; --node:#19C6B6; --inv-bg:#F7F6F2; --inv-fg:#14161A; --inv-muted:#5B6068; color-scheme:dark }
+
+*{ box-sizing:border-box }
+html{ scroll-behavior:smooth }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto } }
+body{ background:var(--bg); color:var(--fg); font-family:var(--font-body); font-size:16px; line-height:1.6; padding:0 }
+body::before{ content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:30; background:var(--bg) }
+h1,h2,h3{ margin:0; font-family:var(--font-display); font-weight:600; line-height:1.12; letter-spacing:-0.02em; text-wrap:balance }
+h1{ font-size:clamp(36px,6vw,64px) } h2{ font-size:clamp(28px,4vw,40px) } h3{ font-size:20px }
+p{ margin:0 } a{ color:inherit }
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{ outline:2px solid var(--accent-text); outline-offset:2px }
+.in{ max-width:1120px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px)) }
+.eyebrow{ font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600 }
+.muted{ color:var(--muted) }
+.lg{ display:inline-flex; align-items:center; color:currentColor; text-decoration:none }
+.lg svg{ height:var(--lgh,28px); width:auto; display:block }
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 20px; border-radius:6px; font-family:var(--font-display); font-weight:600; font-size:15px; text-decoration:none; border:1.5px solid transparent; cursor:pointer; line-height:1.2 }
+.btn.p{ background:var(--accent); color:#14161A; border-color:var(--accent) }
+.btn.p:hover{ background:#15B3A5; border-color:#15B3A5 }
+.btn.g{ background:transparent; color:var(--fg); border-color:var(--fg) }
+.btn.g:hover{ background:var(--soft) }
+.node{ display:inline-block; width:10px; height:10px; border-radius:2px; background:var(--node); flex:none }
+
+/* Barra */
+.bar{ position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:var(--bg); border-bottom:1px solid var(--line) }
+.bar .in{ display:flex; align-items:center; justify-content:space-between; gap:16px; height:68px }
+.bar nav{ display:flex; gap:26px; font-size:14px; font-weight:500 }
+.bar nav a{ text-decoration:none; color:var(--muted) } .bar nav a:hover{ color:var(--fg) }
+.bar .btn{ padding:9px 16px; font-size:14px }
+
+/* Héroe */
+.hero{ padding-block:72px 56px }
+.hero .in{ display:grid; grid-template-columns:1.2fr 1fr; gap:48px; align-items:center }
+.hero h1{ margin-top:14px }
+.hero .sub{ font-size:19px; color:var(--muted); max-width:52ch; margin-top:22px }
+.hero .cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:30px }
+.panel{ background:var(--inv-bg); color:var(--inv-fg); border-radius:16px; padding:28px; min-width:0 }
+.panel .eyebrow{ color:var(--inv-muted) }
+.panel ul{ list-style:none; margin:16px 0 0; padding:0; display:grid; gap:14px }
+.panel li{ display:flex; gap:14px; align-items:flex-start; font-size:16px }
+.panel li .node{ margin-top:8px; background:var(--accent) }
+.panel li b{ font-family:var(--font-display); font-weight:600; display:block }
+.panel li span{ color:var(--inv-muted); font-size:14px }
+
+/* Bandas */
+.band{ padding-block:72px }
+.band.alt{ background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line) }
+.band .head{ max-width:62ch }
+.band .head h2{ margin-top:10px }
+.band .head p{ color:var(--muted); margin-top:14px; font-size:17px }
+.pulse{ width:100%; height:auto; display:block; margin-top:36px }
+
+/* Trayecto */
+.tray{ width:100%; height:auto; display:block; margin-top:36px }
+.tray text{ font-family:var(--font-body); font-size:12px; font-weight:600; letter-spacing:.08em; fill:currentColor }
+.stages{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:28px }
+.stage{ min-width:0 }
+.stage .k{ font-family:var(--font-mono); font-size:12px; color:var(--accent-text); font-weight:500 }
+.stage h3{ margin-top:6px } .stage p{ color:var(--muted); font-size:15px; margin-top:8px }
+
+/* Tarjetas */
+.cards{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:36px }
+.cards.four{ grid-template-columns:repeat(4,1fr) }
+.card{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px; min-width:0; display:flex; flex-direction:column; gap:12px }
+.band.alt .card{ background:var(--bg) }
+.card .ico{ width:44px; height:44px; display:block }
+.card .ico path,.card .ico rect.o,.card .ico line{ fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:square }
+.card .ico rect.nd{ fill:var(--node) }
+.card p{ color:var(--muted); font-size:15px }
+.card ul{ margin:0; padding:0; list-style:none; display:grid; gap:8px; font-size:15px }
+.card li{ display:flex; gap:10px; align-items:flex-start } .card li .node{ margin-top:8px }
+.card .promise{ font-family:var(--font-display); font-weight:600; color:var(--fg); font-size:15px }
+.card.who{ gap:8px }
+.card.who .tag{ font-family:var(--font-mono); font-size:12px; color:var(--accent-text); font-weight:500 }
+.card.who h3{ font-size:24px }
+.card.who .q{ font-family:var(--font-display); font-weight:600; font-size:18px; color:var(--fg); margin-top:6px; line-height:1.35 }
+
+/* Paquetes */
+.pack{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px; display:flex; flex-direction:column; gap:14px; min-width:0 }
+.pack.dark{ background:var(--inv-bg); color:var(--inv-fg); border-color:var(--inv-bg) }
+.pack.dark .muted{ color:var(--inv-muted) } .pack.dark .node{ background:var(--accent) }
+.pack h3{ font-size:26px }
+.pack .for{ font-family:var(--font-mono); font-size:12px; color:var(--accent-text); font-weight:500 }
+.pack.dark .for{ color:var(--accent) }
+.pack ul{ margin:0; padding:0; list-style:none; display:grid; gap:10px; font-size:15px }
+.pack li{ display:flex; gap:10px; align-items:flex-start } .pack li .node{ margin-top:8px }
+.pack .price{ font-family:var(--font-display); font-weight:600; font-size:18px; margin-top:6px }
+.pack .btn{ align-self:flex-start; margin-top:4px }
+.pack.dark .btn.g{ color:var(--inv-fg); border-color:var(--inv-fg) } .pack.dark .btn.g:hover{ background:rgba(255,255,255,.08) }
+
+/* Fundador */
+.who-grid{ display:grid; grid-template-columns:320px 1fr; gap:40px; align-items:start; margin-top:36px }
+.photo{ aspect-ratio:4/5; border-radius:16px; background:var(--inv-bg); color:var(--inv-muted); display:grid; place-items:center; text-align:center; padding:24px; font-size:14px; max-width:100% }
+.photo svg{ width:40%; height:auto; display:block; margin-bottom:14px; color:var(--inv-fg) }
+.photo .o1{ font-family:var(--font-display); font-weight:600; font-size:24px; color:var(--inv-fg); line-height:1.2 }
+.photo .o2{ font-size:14px; color:var(--inv-muted); max-width:24ch; line-height:1.5 }
+.who-text{ min-width:0 }
+.who-text .quote{ font-family:var(--font-display); font-weight:600; font-size:clamp(20px,2.6vw,26px); line-height:1.35 }
+.who-text p + p{ margin-top:14px }
+.who-text .name{ margin-top:22px; font-family:var(--font-display); font-weight:600 }
+
+/* Preguntas */
+.faq{ margin-top:28px; display:grid; gap:10px; max-width:760px }
+.faq details{ border:1px solid var(--line); border-radius:12px; background:var(--card); padding:0 20px }
+.faq summary{ cursor:pointer; list-style:none; padding:16px 0; font-family:var(--font-display); font-weight:600; font-size:16px; display:flex; justify-content:space-between; gap:16px; align-items:center }
+.faq summary::-webkit-details-marker{ display:none }
+.faq summary::after{ content:"+"; font-family:var(--font-mono); color:var(--accent-text); font-size:18px; flex:none }
+.faq details[open] summary::after{ content:"–" }
+.faq details p{ color:var(--muted); padding-bottom:18px; font-size:15px; max-width:62ch }
+
+/* Contacto */
+.contact{ background:var(--inv-bg); color:var(--inv-fg) }
+.contact .in{ display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start }
+.contact .eyebrow{ color:var(--inv-muted) }
+.contact h2{ margin-top:10px }
+.contact .lead{ color:var(--inv-muted); margin-top:16px; font-size:17px; max-width:48ch }
+.contact .ways{ margin-top:28px; display:grid; gap:10px; font-size:15px }
+.contact .ways div{ display:flex; gap:12px; align-items:center } .contact .ways .node{ background:var(--accent) }
+.contact .ways code{ font-family:var(--font-mono); font-size:14px; user-select:all }
+form{ display:grid; gap:14px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:24px }
+:root[data-theme="dark"] form, :root:not([data-theme="light"]) form{ }
+.f{ display:grid; gap:6px; font-size:13px; font-weight:600; color:var(--inv-muted) }
+.f input,.f select,.f textarea{ font:15px var(--font-body); padding:11px 12px; border-radius:6px; border:1px solid rgba(128,128,128,.45); background:var(--bg); color:var(--fg); width:100% }
+.f textarea{ min-height:96px; resize:vertical }
+.row2{ display:grid; grid-template-columns:1fr 1fr; gap:14px }
+.out{ display:none; margin-top:4px; background:var(--bg); color:var(--fg); border-radius:10px; padding:14px 16px; font-size:14px; line-height:1.55; white-space:pre-wrap; position:relative }
+.out.show{ display:block }
+.out button{ position:absolute; top:10px; right:10px; font:600 12px var(--font-body); padding:6px 10px; border-radius:6px; border:1px solid var(--line); background:var(--card); color:var(--fg); cursor:pointer }
+.formnote{ font-size:12px; color:var(--inv-muted) }
+
+/* Pie */
+footer{ padding-block:40px; border-top:1px solid var(--line) }
+footer .in{ display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; align-items:center; font-size:14px; color:var(--muted) }
+footer nav{ display:flex; gap:18px; flex-wrap:wrap } footer nav a{ text-decoration:none }
+
+@media (max-width:900px){ .hero .in{ grid-template-columns:1fr } .cards.four{ grid-template-columns:1fr 1fr } .stages{ grid-template-columns:1fr 1fr } .who-grid{ grid-template-columns:1fr } .photo{ max-width:320px } .contact .in{ grid-template-columns:1fr } }
+@media (max-width:760px){ .bar nav{ display:none } }
+@media (max-width:600px){ .cards,.cards.four,.stages,.row2{ grid-template-columns:1fr } .band{ padding-block:56px } .hero{ padding-block:48px 40px } }
+
+.out .acts{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px }
+.out .acts .btn{ padding:9px 14px; font-size:14px }
+.out.ok{ border:1px solid var(--accent) }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="in">
+    <a class="lg" href="#inicio" aria-label="Cardai, inicio"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4357 908"><g transform="translate(60.00 60.00) scale(8.9419) translate(-4 -8)"><path d="M67.86 78.05 A34 34 0 1 1 67.86 25.95" fill="none" stroke="currentColor" stroke-width="16"/><rect x="78" y="8" rx="3" fill="var(--node)"/></g><g transform="translate(1264.77 829.00)"><path d="M319 19Q248 19 195.5 -4.5Q143 -28 108.0 -68.0Q73 -108 56.0 -158.5Q39 -209 39 -263V-282Q39 -338 57.0 -389.5Q75 -441 110.0 -481.0Q145 -521 197.5 -544.0Q250 -567 318 -567Q392 -567 449.0 -538.5Q506 -510 540.0 -459.0Q574 -408 578 -342H421Q417 -379 391.5 -404.5Q366 -430 318 -430Q278 -430 251.5 -410.0Q225 -390 212.0 -355.0Q199 -320 199 -272Q199 -228 211.0 -192.5Q223 -157 249.5 -137.5Q276 -118 319 -118Q351 -118 373.5 -129.5Q396 -141 409.5 -161.5Q423 -182 426 -209H582Q579 -141 544.0 -89.5Q509 -38 451.0 -9.5Q393 19 319 19Z" fill="currentColor"/><path d="M985 0V-162H958V-338Q958 -380 938.0 -401.0Q918 -422 874 -422Q852 -422 816.0 -421.0Q780 -420 742.0 -418.0Q704 -416 673 -414V-549Q696 -551 727.0 -553.0Q758 -555 791.0 -556.0Q824 -557 853 -557Q937 -557 994.5 -533.0Q1052 -509 1082.0 -460.5Q1112 -412 1112 -336V0ZM810 14Q751 14 706.5 -7.0Q662 -28 637.0 -67.5Q612 -107 612 -162Q612 -222 643.0 -260.5Q674 -299 730.0 -317.5Q786 -336 859 -336H976V-247H858Q816 -247 793.5 -226.5Q771 -206 771 -171Q771 -138 793.5 -117.5Q816 -97 858 -97Q885 -97 906.5 -106.5Q928 -116 942.0 -139.0Q956 -162 958 -203L996 -163Q991 -106 968.5 -67.0Q946 -28 906.5 -7.0Q867 14 810 14Z" fill="currentColor"/><path d="M1218 0V-548H1345V-313H1342Q1342 -429 1391.5 -492.0Q1441 -555 1535 -555H1556V-417H1516Q1450 -417 1414.0 -381.5Q1378 -346 1378 -279V0Z" fill="currentColor"/><path d="M1835 18Q1777 18 1729.5 -3.0Q1682 -24 1647.0 -61.5Q1612 -99 1593.5 -150.0Q1575 -201 1575 -260V-283Q1575 -342 1592.5 -393.0Q1610 -444 1643.5 -482.5Q1677 -521 1724.0 -542.5Q1771 -564 1829 -564Q1895 -564 1943.0 -535.5Q1991 -507 2018.0 -451.5Q2045 -396 2048 -315L2006 -354V-730H2167V0H2040V-227H2062Q2059 -149 2029.5 -94.0Q2000 -39 1950.0 -10.5Q1900 18 1835 18ZM1875 -116Q1912 -116 1942.5 -132.5Q1973 -149 1991.5 -181.0Q2010 -213 2010 -258V-295Q2010 -339 1991.0 -369.0Q1972 -399 1941.0 -415.0Q1910 -431 1874 -431Q1834 -431 1802.5 -410.5Q1771 -390 1753.0 -354.5Q1735 -319 1735 -272Q1735 -224 1753.0 -189.0Q1771 -154 1803.0 -135.0Q1835 -116 1875 -116Z" fill="currentColor"/><path d="M2613 0V-162H2586V-338Q2586 -380 2566.0 -401.0Q2546 -422 2502 -422Q2480 -422 2444.0 -421.0Q2408 -420 2370.0 -418.0Q2332 -416 2301 -414V-549Q2324 -551 2355.0 -553.0Q2386 -555 2419.0 -556.0Q2452 -557 2481 -557Q2565 -557 2622.5 -533.0Q2680 -509 2710.0 -460.5Q2740 -412 2740 -336V0ZM2438 14Q2379 14 2334.5 -7.0Q2290 -28 2265.0 -67.5Q2240 -107 2240 -162Q2240 -222 2271.0 -260.5Q2302 -299 2358.0 -317.5Q2414 -336 2487 -336H2604V-247H2486Q2444 -247 2421.5 -226.5Q2399 -206 2399 -171Q2399 -138 2421.5 -117.5Q2444 -97 2486 -97Q2513 -97 2534.5 -106.5Q2556 -116 2570.0 -139.0Q2584 -162 2586 -203L2624 -163Q2619 -106 2596.5 -67.0Q2574 -28 2534.5 -7.0Q2495 14 2438 14Z" fill="var(--node)"/><path d="M2872 0V-548H3032V0ZM2799 -430V-548H3032V-430Z" fill="var(--node)"/><rect x="2835.50" y="-769.00" rx="28.8" fill="var(--node)"/></g></svg></a>
+    <nav aria-label="Secciones"><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#paquetes">Paquetes</a><a href="#fundador">Quién está detrás</a><a href="#preguntas">Preguntas</a></nav>
+    <a class="btn p js-agenda" href="#contacto">Agenda una llamada</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="in">
+    <div>
+      <p class="eyebrow">Identidad, marketing y tecnología para empresas</p>
+      <h1>De la identidad a la automatización.</h1>
+      <p class="sub">Construimos la identidad, la presencia digital y los sistemas que hacen crecer a tu empresa. Un solo método, un solo responsable, para empresas de habla hispana que arrancan o que ya están consolidadas.</p>
+      <div class="cta"><a class="btn p js-agenda" href="#contacto">Agenda una llamada</a><a class="btn g" href="#metodo">Ver el método</a></div>
+    </div>
+    <aside class="panel" aria-label="Qué hacemos">
+      <p class="eyebrow">Cuatro líneas, un solo equipo</p>
+      <ul>
+        <li><span class="node"></span><div><b>Identidad de marca</b><span>Define quién eres</span></div></li>
+        <li><span class="node"></span><div><b>Web y tienda en línea</b><span>Vende a toda hora</span></div></li>
+        <li><span class="node"></span><div><b>Campañas en Meta</b><span>Llega a quien importa</span></div></li>
+        <li><span class="node"></span><div><b>Automatización y tecnología</b><span>Haz más con menos</span></div></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="band alt" id="metodo">
+  <div class="in">
+    <div class="head">
+      <p class="eyebrow">Así trabajamos</p>
+      <h2>Un solo método, de principio a fin.</h2>
+      <p>Puedes entrar por cualquier etapa. Lo que construimos en una queda listo para la siguiente, y la persona que empezó contigo es la misma que termina.</p>
+    </div>
+    <svg class="tray" viewBox="-40 0 720 86" role="img" aria-label="Trayecto Cardai: Define, Construye, Crece, Automatiza">
+      <line x1="40" y1="30" x2="600" y2="30" stroke="currentColor" stroke-width="2"/>
+      <rect x="31" y="21" width="18" height="18" rx="3" fill="var(--card)" stroke="currentColor" stroke-width="2.2"/>
+      <rect x="218" y="21" width="18" height="18" rx="3" fill="var(--card)" stroke="currentColor" stroke-width="2.2"/>
+      <rect x="404" y="21" width="18" height="18" rx="3" fill="var(--card)" stroke="currentColor" stroke-width="2.2"/>
+      <rect x="589" y="19" width="22" height="22" rx="4" fill="var(--node)"/>
+      <text x="40" y="70" text-anchor="middle">DEFINE</text><text x="227" y="70" text-anchor="middle">CONSTRUYE</text><text x="413" y="70" text-anchor="middle">CRECE</text><text x="600" y="70" text-anchor="middle">AUTOMATIZA</text>
+    </svg>
+    <div class="stages">
+      <div class="stage"><p class="k">01</p><h3>Define</h3><p>Dejamos clara tu marca: qué eres, para quién y por qué tú. Nombre, logotipo, identidad visual y manual.</p></div>
+      <div class="stage"><p class="k">02</p><h3>Construye</h3><p>Levantamos tu sitio o tu tienda en línea con esa marca aplicada y listos para recibir campañas.</p></div>
+      <div class="stage"><p class="k">03</p><h3>Crece</h3><p>Campañas en Facebook e Instagram que llevan clientes a lo que construimos, medidas en contactos y ventas.</p></div>
+      <div class="stage"><p class="k">04</p><h3>Automatiza</h3><p>Lo repetitivo deja de depender de ti: cotizaciones, pedidos, avisos y datos que se mueven solos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="para-quien">
+  <div class="in">
+    <div class="head">
+      <p class="eyebrow">Para quién</p>
+      <h2>Dos momentos de una empresa, un mismo socio.</h2>
+    </div>
+    <div class="cards">
+      <div class="card who"><p class="tag">Empresas que arrancan</p><h3>Nacer bien</h3><p>Tienes el negocio claro y la marca por hacer. Necesitas identidad, sitio o tienda y redes desde el primer día, sin gastar en corregir después.</p><p class="q">Nacer bien cuesta menos que corregir después.</p></div>
+      <div class="card who"><p class="tag">Empresas consolidadas</p><h3>Crecer con menos esfuerzo</h3><p>Ya vendes. La marca se quedó en los primeros años, el marketing se hace a ratos y demasiadas tareas dependen de ti. Toca renovar, profesionalizar y automatizar.</p><p class="q">Ya vendes. Ahora vende sin que todo dependa de ti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="servicios">
+  <div class="in">
+    <div class="head">
+      <p class="eyebrow">Servicios</p>
+      <h2>Cuatro líneas que trabajan juntas.</h2>
+      <p>La mayoría de agencias hace marca, o marketing, o tecnología. En Cardai hacemos las tres de forma conectada, y por eso cada pieza aprovecha a la anterior.</p>
+    </div>
+    <div class="cards four">
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38 L24 8 L38 38 Z"/><line x1="16" y1="28" x2="32" y2="28"/><rect class="nd" x="34" y="6" width="6" height="6" rx="1.2"/></svg>
+        <h3>Identidad de marca</h3><p class="promise">Define quién eres.</p>
+        <ul><li><span class="node"></span>Naming y relato de marca</li><li><span class="node"></span>Logotipo e identidad visual</li><li><span class="node"></span>Manual de marca</li><li><span class="node"></span>Renovación de marcas existentes</li></ul>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18 L12 8 H36 L40 18 Z"/><path d="M10 18 V40 H38 V18"/><path d="M20 40 V28 H28 V40"/><rect class="nd" x="31" y="22" width="6" height="6" rx="1.2"/></svg>
+        <h3>Web y tienda en línea</h3><p class="promise">Vende a toda hora.</p>
+        <ul><li><span class="node"></span>Sitios web corporativos</li><li><span class="node"></span>Tiendas en línea con pagos y envíos</li><li><span class="node"></span>Páginas de aterrizaje para campañas</li><li><span class="node"></span>Mantenimiento y mejoras</li></ul>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20 L28 12 V36 L8 28 Z"/><path d="M28 18 L38 14 V34 L28 30"/><line x1="12" y1="28" x2="14" y2="38"/><rect class="nd" x="38" y="7" width="6" height="6" rx="1.2"/></svg>
+        <h3>Campañas en Meta</h3><p class="promise">Llega a quien importa.</p>
+        <ul><li><span class="node"></span>Estrategia y configuración de cuentas</li><li><span class="node"></span>Anuncios en Facebook e Instagram</li><li><span class="node"></span>Contenido y plantillas de publicación</li><li><span class="node"></span>Reportes en ventas y contactos</li></ul>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect class="o" x="8" y="8" width="12" height="12"/><rect class="o" x="28" y="28" width="12" height="12"/><path d="M20 14 H34 V28"/><path d="M14 20 V34 H28"/><rect class="nd" x="31" y="11" width="6" height="6" rx="1.2"/></svg>
+        <h3>Automatización y tecnología</h3><p class="promise">Haz más con menos.</p>
+        <ul><li><span class="node"></span>Automatización de procesos repetitivos</li><li><span class="node"></span>Integraciones entre sistemas</li><li><span class="node"></span>Inteligencia artificial aplicada</li><li><span class="node"></span>Implementaciones a la medida</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="paquetes">
+  <div class="in">
+    <div class="head">
+      <p class="eyebrow">Paquetes</p>
+      <h2>Dos puertas de entrada.</h2>
+      <p>Cada paquete se ajusta a tu empresa en la primera llamada. También puedes contratar cualquier línea por separado.</p>
+    </div>
+    <div class="cards">
+      <div class="pack">
+        <p class="for">Para empresas que arrancan</p>
+        <h3>Arranque</h3>
+        <p class="muted">Todo lo necesario para nacer bien y empezar a vender con una imagen a la altura.</p>
+        <ul>
+          <li><span class="node"></span>Identidad de marca completa con manual</li>
+          <li><span class="node"></span>Sitio web o tienda en línea</li>
+          <li><span class="node"></span>Perfiles en Instagram, Facebook y WhatsApp configurados</li>
+          <li><span class="node"></span>Plantillas de publicación y primeras nueve piezas</li>
+        </ul>
+        <p class="price">Inversión a la medida de tu arranque</p>
+        <a class="btn g" href="#contacto">Hablemos de Arranque</a>
+      </div>
+      <div class="pack dark">
+        <p class="for">Para empresas consolidadas</p>
+        <h3>Escala</h3>
+        <p class="muted">Para quien ya vende y quiere crecer con menos esfuerzo, no con más horas.</p>
+        <ul>
+          <li><span class="node"></span>Renovación de identidad y manual de marca</li>
+          <li><span class="node"></span>Campañas en Meta con objetivo de ventas</li>
+          <li><span class="node"></span>Una primera automatización de lo que hoy haces a mano</li>
+          <li><span class="node"></span>Mejoras al sitio o la tienda existente</li>
+        </ul>
+        <p class="price">Inversión según alcance</p>
+        <a class="btn g" href="#contacto">Hablemos de Escala</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="fundador">
+  <div class="in">
+    <div class="head">
+      <p class="eyebrow">Quién está detrás</p>
+      <h2>Un apellido en el nombre, un responsable en cada proyecto.</h2>
+    </div>
+    <div class="who-grid">
+      <div class="photo" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px"><svg viewBox="0 0 104 104" aria-hidden="true" style="margin:0"><g transform="translate(5 2)"><path d="M67.86 78.05 A34 34 0 1 1 67.86 25.95" fill="none" stroke="currentColor" stroke-width="16"/><rect x="78" y="8" width="16" height="16" rx="3" fill="#19C6B6"/></g></svg><p class="o1">Cárdenas + AI</p><p class="o2">Un apellido que responde y la tecnología que construye.</p></div>
+      <div class="who-text">
+        <p class="quote">Cardai nace de dos palabras. Cárdenas, el apellido de quien responde por cada proyecto, y AI, la inteligencia artificial que atraviesa todo lo que construimos.</p>
+        <p class="muted" style="margin-top:18px">Creo que cualquier empresa de habla hispana, grande o naciente, merece una marca y una tecnología a la altura de su ambición. Por eso trabajo con un solo método, de la identidad a la automatización, y por eso la persona que empieza contigo es la misma que termina.</p>
+        <p class="muted">Cuando el alcance lo pide, sumo especialistas por proyecto. Lo que no cambia es el responsable: cada entrega lleva mi nombre.</p>
+        <p class="name">Nombre Cárdenas</p>
+        <p class="muted">Fundador · Cardai Solutions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="preguntas">
+  <div class="in">
+    <div class="head">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que suelen preguntarnos antes de empezar.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Trabajan con empresas fuera de México?</summary><p>Sí. Atendemos empresas en cualquier país de habla hispana. Todo el trabajo se hace en remoto, con llamadas y entregas en línea.</p></details>
+      <details><summary>¿Cuánto tarda un proyecto?</summary><p>Plazos típicos: identidad de marca, de tres a cuatro semanas. Sitio web, de cuatro a seis. Tienda en línea, de seis a ocho. Campañas en Meta, en marcha en dos semanas. Las automatizaciones dependen de cada proceso y se cotizan con plazo cerrado.</p></details>
+      <details><summary>¿Puedo contratar solo una parte?</summary><p>Sí. Cualquier línea se contrata por separado. El método existe para que, si después quieres seguir, lo que ya construimos sirva de base y no haya que rehacer nada.</p></details>
+      <details><summary>¿Quién hace el trabajo?</summary><p>El fundador, de principio a fin. Cuando el alcance lo requiere, se suman especialistas por proyecto bajo la misma dirección. Siempre hay un solo responsable y un solo punto de contacto.</p></details>
+      <details><summary>¿Cómo se cobra?</summary><p>Los proyectos se cotizan con alcance cerrado: una parte al inicio y el resto a la entrega. Las campañas en Meta llevan una cuota mensual aparte de la inversión publicitaria, que siempre es tuya y se paga directo a Meta.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contacto">
+  <div class="in">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h2>Veinte minutos para saber qué le conviene a tu empresa.</h2>
+      <p class="lead">Sin compromiso y sin tecnicismos. Nos cuentas qué hace tu empresa y qué te frena, y te decimos con claridad por dónde empezar y cuánto cuesta.</p>
+      <div class="ways">
+        <div><span class="node"></span><span>Correo: <a href="mailto:hola@cardai.mx"><code id="way-mail">hola@cardai.mx</code></a></span></div>
+        <div id="way-wa" hidden><span class="node"></span><span>WhatsApp: <a id="way-wa-link" href="#contacto" target="_blank" rel="noopener"><code id="way-wa-num"></code></a></span></div>
+        <div><span class="node"></span><span>Lunes a viernes, 9 a 18 h, hora del centro de México</span></div>
+      </div>
+    </div>
+    <form id="frm" novalidate>
+      <div class="row2">
+        <label class="f">Tu nombre<input id="f-nombre" name="nombre" type="text" autocomplete="name" required></label>
+        <label class="f">Tu empresa<input id="f-empresa" name="empresa" type="text" autocomplete="organization" required></label>
+      </div>
+      <label class="f">Qué necesitas
+        <select id="f-necesita" name="necesita">
+          <option>Identidad de marca</option><option>Web o tienda en línea</option><option>Campañas en Meta</option><option>Automatización</option><option>No lo sé todavía</option>
+        </select>
+      </label>
+      <label class="f">Cuéntanos en dos líneas<textarea id="f-msg" name="mensaje" placeholder="Qué hace tu empresa y qué te frena hoy"></textarea></label>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+      <button class="btn p" type="submit" id="f-send">Enviar</button>
+      <p class="formnote">Al enviarlo aceptas el <a href="aviso-de-privacidad.html">aviso de privacidad</a>. Te respondemos en horario laboral, de lunes a viernes de 9 a 18 h.</p>
+      <div class="out" id="out" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="in">
+    <a class="lg" href="#inicio" aria-label="Cardai" style="--lgh:22px"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4357 908"><g transform="translate(60.00 60.00) scale(8.9419) translate(-4 -8)"><path d="M67.86 78.05 A34 34 0 1 1 67.86 25.95" fill="none" stroke="currentColor" stroke-width="16"/><rect x="78" y="8" rx="3" fill="var(--node)"/></g><g transform="translate(1264.77 829.00)"><path d="M319 19Q248 19 195.5 -4.5Q143 -28 108.0 -68.0Q73 -108 56.0 -158.5Q39 -209 39 -263V-282Q39 -338 57.0 -389.5Q75 -441 110.0 -481.0Q145 -521 197.5 -544.0Q250 -567 318 -567Q392 -567 449.0 -538.5Q506 -510 540.0 -459.0Q574 -408 578 -342H421Q417 -379 391.5 -404.5Q366 -430 318 -430Q278 -430 251.5 -410.0Q225 -390 212.0 -355.0Q199 -320 199 -272Q199 -228 211.0 -192.5Q223 -157 249.5 -137.5Q276 -118 319 -118Q351 -118 373.5 -129.5Q396 -141 409.5 -161.5Q423 -182 426 -209H582Q579 -141 544.0 -89.5Q509 -38 451.0 -9.5Q393 19 319 19Z" fill="currentColor"/><path d="M985 0V-162H958V-338Q958 -380 938.0 -401.0Q918 -422 874 -422Q852 -422 816.0 -421.0Q780 -420 742.0 -418.0Q704 -416 673 -414V-549Q696 -551 727.0 -553.0Q758 -555 791.0 -556.0Q824 -557 853 -557Q937 -557 994.5 -533.0Q1052 -509 1082.0 -460.5Q1112 -412 1112 -336V0ZM810 14Q751 14 706.5 -7.0Q662 -28 637.0 -67.5Q612 -107 612 -162Q612 -222 643.0 -260.5Q674 -299 730.0 -317.5Q786 -336 859 -336H976V-247H858Q816 -247 793.5 -226.5Q771 -206 771 -171Q771 -138 793.5 -117.5Q816 -97 858 -97Q885 -97 906.5 -106.5Q928 -116 942.0 -139.0Q956 -162 958 -203L996 -163Q991 -106 968.5 -67.0Q946 -28 906.5 -7.0Q867 14 810 14Z" fill="currentColor"/><path d="M1218 0V-548H1345V-313H1342Q1342 -429 1391.5 -492.0Q1441 -555 1535 -555H1556V-417H1516Q1450 -417 1414.0 -381.5Q1378 -346 1378 -279V0Z" fill="currentColor"/><path d="M1835 18Q1777 18 1729.5 -3.0Q1682 -24 1647.0 -61.5Q1612 -99 1593.5 -150.0Q1575 -201 1575 -260V-283Q1575 -342 1592.5 -393.0Q1610 -444 1643.5 -482.5Q1677 -521 1724.0 -542.5Q1771 -564 1829 -564Q1895 -564 1943.0 -535.5Q1991 -507 2018.0 -451.5Q2045 -396 2048 -315L2006 -354V-730H2167V0H2040V-227H2062Q2059 -149 2029.5 -94.0Q2000 -39 1950.0 -10.5Q1900 18 1835 18ZM1875 -116Q1912 -116 1942.5 -132.5Q1973 -149 1991.5 -181.0Q2010 -213 2010 -258V-295Q2010 -339 1991.0 -369.0Q1972 -399 1941.0 -415.0Q1910 -431 1874 -431Q1834 -431 1802.5 -410.5Q1771 -390 1753.0 -354.5Q1735 -319 1735 -272Q1735 -224 1753.0 -189.0Q1771 -154 1803.0 -135.0Q1835 -116 1875 -116Z" fill="currentColor"/><path d="M2613 0V-162H2586V-338Q2586 -380 2566.0 -401.0Q2546 -422 2502 -422Q2480 -422 2444.0 -421.0Q2408 -420 2370.0 -418.0Q2332 -416 2301 -414V-549Q2324 -551 2355.0 -553.0Q2386 -555 2419.0 -556.0Q2452 -557 2481 -557Q2565 -557 2622.5 -533.0Q2680 -509 2710.0 -460.5Q2740 -412 2740 -336V0ZM2438 14Q2379 14 2334.5 -7.0Q2290 -28 2265.0 -67.5Q2240 -107 2240 -162Q2240 -222 2271.0 -260.5Q2302 -299 2358.0 -317.5Q2414 -336 2487 -336H2604V-247H2486Q2444 -247 2421.5 -226.5Q2399 -206 2399 -171Q2399 -138 2421.5 -117.5Q2444 -97 2486 -97Q2513 -97 2534.5 -106.5Q2556 -116 2570.0 -139.0Q2584 -162 2586 -203L2624 -163Q2619 -106 2596.5 -67.0Q2574 -28 2534.5 -7.0Q2495 14 2438 14Z" fill="var(--node)"/><path d="M2872 0V-548H3032V0ZM2799 -430V-548H3032V-430Z" fill="var(--node)"/><rect x="2835.50" y="-769.00" rx="28.8" fill="var(--node)"/></g></svg></a>
+    <nav aria-label="Pie"><a href="#servicios">Servicios</a><a href="#metodo">Método</a><a href="#paquetes">Paquetes</a><a href="#fundador">Quién está detrás</a><a href="#contacto">Contacto</a></nav>
+    <p>Cardai Solutions · Identidad, marketing y tecnología para empresas · México y todo el mundo de habla hispana · <a href="aviso-de-privacidad.html">Aviso de privacidad</a></p>
+  </div>
+</footer>
+
+
+
+<script>
+(function(){
+  var C = window.CARDAI || {};
+  /* Enlaces de agenda */
+  if (C.agendaUrl) { document.querySelectorAll('.js-agenda').forEach(function(a){ a.href = C.agendaUrl; a.target = '_blank'; a.rel = 'noopener'; }); }
+  /* WhatsApp visible solo si está configurado */
+  if (C.whatsapp) {
+    var wa = document.getElementById('way-wa'); wa.hidden = false;
+    document.getElementById('way-wa-num').textContent = '+' + C.whatsapp;
+    document.getElementById('way-wa-link').href = 'https://wa.me/' + C.whatsapp;
+  }
+  /* Formulario */
+  var frm = document.getElementById('frm'), out = document.getElementById('out'), send = document.getElementById('f-send');
+  function show(html, ok){ out.className = 'out show' + (ok ? ' ok' : ''); out.innerHTML = html; }
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  frm.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (frm.querySelector('[name="_gotcha"]').value) { return; }
+    var n = document.getElementById('f-nombre').value.trim(), em = document.getElementById('f-empresa').value.trim();
+    var ne = document.getElementById('f-necesita').value, m = document.getElementById('f-msg').value.trim();
+    if (!n || !em) { show('Falta tu nombre o el de tu empresa.'); return; }
+    var txt = 'Hola Cardai. Soy ' + n + ', de ' + em + '. Me interesa: ' + ne + '.' + (m ? ' ' + m : '') + ' ¿Podemos agendar una llamada de 20 minutos?';
+    var acts = '<div class="acts">' + (C.whatsapp ? '<a class="btn p" target="_blank" rel="noopener" href="https://wa.me/' + C.whatsapp + '?text=' + encodeURIComponent(txt) + '">Enviar por WhatsApp</a>' : '') + '<a class="btn g" href="mailto:hola@cardai.mx?subject=' + encodeURIComponent('Contacto desde cardai.mx') + '&body=' + encodeURIComponent(txt) + '">Enviar por correo</a></div>';
+    if (C.formEndpoint) {
+      send.disabled = true; send.textContent = 'Enviando';
+      fetch(C.formEndpoint, { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, body: JSON.stringify({ nombre: n, empresa: em, necesita: ne, mensaje: m, _subject: 'Contacto desde cardai.mx: ' + em }) })
+        .then(function(r){ if (!r.ok) throw new Error('fallo'); show('<b>Recibido.</b> Gracias, ' + esc(n) + '. Te respondemos en horario laboral. Si prefieres, también puedes escribirnos ahora:' + acts, true); frm.reset(); })
+        .catch(function(){ show('No pudimos enviar el formulario. Mándanos el mensaje por otro canal:<br><br>' + esc(txt) + acts); })
+        .then(function(){ send.disabled = false; send.textContent = 'Enviar'; });
+    } else {
+      show('Tu mensaje está listo. Elige por dónde enviarlo:<br><br>' + esc(txt) + acts, true);
+    }
+  });
+  /* Píxel de Meta, solo si hay identificador */
+  if (C.pixelId) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', C.pixelId); fbq('track', 'PageView');
+    frm.addEventListener('submit', function(){ try { fbq('track', 'Lead'); } catch(e){} });
+  }
+})();
+</script>
+</body>
+</html>
